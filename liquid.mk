@@ -14,10 +14,10 @@ $(call inherit-product, device/xiaomi/lavender/device.mk)
 
 # Inherit some common BootLeggers stuff.
 TARGET_BOOT_ANIMATION_RES := 1080
-$(call inherit-product, vendor/cosp/config/common_full_phone.mk)
+$(call inherit-product, vendor/liquid/config/common_full_phone.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := cosp_lavender
+PRODUCT_NAME := liquid_lavender
 PRODUCT_DEVICE := lavender
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi Note 7
@@ -27,6 +27,5 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     TARGET_DEVICE="lavender" \
     PRODUCT_NAME="lavender" \
     PRIVATE_BUILD_DESC="lavender-user 9 PKQ1.180904.001 V10.3.6.0.PFGMIXM release-keys" \
-    DEVICE_MAINTAINERS="Clytheee"
     
 BUILD_FINGERPRINT := "xiaomi/lavender/lavender:9/PKQ1.180904.001/V10.3.6.0.PFGMIXM:user/release-keys"
